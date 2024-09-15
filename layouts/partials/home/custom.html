@@ -77,9 +77,9 @@
     </div>
 </article>
 <section>
-    {{ partial "recent-articles/main.html" . }}
+    {{ partial "recent-articles/custom.html" . }}
 </section>
-{{ if .Site.Params.homepage.layoutBackgroundBlur | default false }}
+{{/*  {{ if .Site.Params.homepage.layoutBackgroundBlur | default false }}  */}}
 <div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
 <script>
     window.addEventListener('scroll', function (e) {
@@ -88,4 +88,4 @@
         background_blur.style.opacity = (scroll / 300)
     });
 </script>
-{{ end }}
+{{/*  {{ end }}  */}}

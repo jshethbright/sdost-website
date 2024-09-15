@@ -9,7 +9,7 @@
 }
 
 h1 {
-  font-family: Saira-Bold;
+  font-family: Exo2-Light;
 }
 
 h2 {
@@ -17,5 +17,9 @@ h2 {
 }
 
 p {
+  font-family: Exo2-Light;
+}
+
+.font-bold {
   font-family: Exo2-Light;
 }
