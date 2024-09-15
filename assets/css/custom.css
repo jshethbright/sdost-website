@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Saira-Bold;
+  src: url("/fonts/Saira-Bold.ttf");
+}
+
+@font-face {
+  font-family: Exo2-Light;
+  src: url("/fonts/Exo2-Light.ttf");
+}
+
+h1 {
+  font-family: Saira-Bold;
+}
+
+h2 {
+  font-family: Exo2-Light;
+}
+
+p {
+  font-family: Exo2-Light;
+}
