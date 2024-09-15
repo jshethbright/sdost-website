@@ -1,0 +1,23 @@
+languageCode = "en"
+languageName = "English"
+title = "Orchestral Soundtracks @ San Diego"
+weight = 1
+
+[params]
+description = "My awesome website"
+displayName = "EN"
+isoCode = "en"
+logo = "img/logo_square_simple_white.png"
+rtl = false
+# copyright = "Copy, _right?_ :thinking_face:"
+dateFormat = "2 January 2006"
+
+[params.author]
+# bio = "A little bit about you"
+headline = "We specialize in music from video games and anime!"
+image = "img/logo_full_simple_white.png"
+# links = [
+#   {github = "https://github.com/nunocoracao/blowfish"},
+#   {instagram = "https://twitter.com/burufugu"},
+# ]
+name = "Orchestral Soundtracks @ San Diego"
