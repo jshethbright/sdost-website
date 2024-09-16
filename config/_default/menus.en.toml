@@ -9,7 +9,12 @@ pageRef = "/contact"
 weight = 2
 
 [[main]]
+name = "Join"
+pageRef = "/join"
+weight = 3
+
+[[main]]
 identifier = "instagram"
 pre = "instagram"
 url = "https://instagram.com/ost.sd"
-weight = 3
+weight = 4

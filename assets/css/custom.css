@@ -20,6 +20,31 @@ p {
   font-family: Exo2-Light;
 }
 
+button {
+  font-family: Exo2-Light;
+}
+
 .font-bold {
   font-family: Exo2-Light;
+}
+
+.text-switcher {
+  font-size: 2em;
+  font-weight: bold;
+  animation: switchText 9s infinite;
+}
+
+@keyframes switchText {
+  0% {
+    content: "con";
+  }
+  33% {
+    content: "bar";
+  }
+  66% {
+    content: "event";
+  }
+  100% {
+    content: "con";
+  }
 }
