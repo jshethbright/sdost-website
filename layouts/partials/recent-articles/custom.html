@@ -5,6 +5,7 @@
 {{ $recentArticles = .Site.Params.homepage.showRecentItems }}
 {{ end }}
 <h2 class="mt-8 text-2xl font-extrabold mb-10">{{ i18n "shortcode.recent_articles" | emojify }}</h2>
+<!-- <div class=" mb-10">Catch up on some events OST will be attending</div> -->
 
 {{ if and .Site.Params.homepage.cardView (not .Site.Params.homepage.cardViewScreenWidth) | default false }}
   {{ partial "recent-articles/cardview.html" . }}

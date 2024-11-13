@@ -1,0 +1,76 @@
+/* .testred {
+    background-color: red;
+}
+.testblue {
+    background-color: blue;
+}
+.testgreen {
+    background-color: green;
+}
+
+.cta-card {
+    background-color: red;
+}
+
+
+
+
+
+
+
+div {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: Saira-Bold;
+    src: url("/fonts/Saira-Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: Exo2-Light;
+    src: url("/fonts/Exo2-Light.ttf");
+  }
+  
+  h1 {
+    font-family: Exo2-Light;
+  }
+  
+  h2 {
+    font-family: Exo2-Light;
+  }
+  
+  p {
+    font-family: Exo2-Light;
+  }
+  
+  button {
+    font-family: Exo2-Light;
+  }
+  
+  .font-bold {
+    font-family: Exo2-Light;
+  }
+  
+  .text-switcher {
+    font-size: 2em;
+    font-weight: bold;
+    animation: switchText 9s infinite;
+  }
+  
+  @keyframes switchText {
+    0% {
+      content: "con";
+    }
+    33% {
+      content: "bar";
+    }
+    66% {
+      content: "event";
+    }
+    100% {
+      content: "con";
+    }
+  }
+   */

@@ -1,6 +1,6 @@
 autoSwitchAppearance = false 
 colorScheme = "test2" 
-defaultAppearance = "light" # valid options: light or dark
+defaultAppearance = "dark" # valid options: light or dark
 disableImageOptimization = true 
 disableTextInHeader = true 
 enableCodeCopy = false 
@@ -10,7 +10,7 @@ enableSearch = false
 # robots = ""
 
 [header]
-layout = "fixed" # valid options: basic, fixed
+layout = "custom" # valid options: basic, fixed
 showAppearanceSwitcher = false 
 
 [footer]
@@ -30,3 +30,4 @@ showMoreLink = false
 # showMoreLinkDest = "/blowfish_artist/posts" 
 showRecent = true
 showRecentItems = 3
+backContactImage = "img/back_contact.jpg"
