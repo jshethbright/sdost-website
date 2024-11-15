@@ -29,5 +29,5 @@ layoutBackgroundBlur = false
 showMoreLink = false 
 # showMoreLinkDest = "/blowfish_artist/posts" 
 backContactImage = "img/back_contact.jpg"
-showRecent = true
+showRecent = false
 showRecentItems = 3
