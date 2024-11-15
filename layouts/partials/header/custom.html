@@ -11,7 +11,7 @@
       <!-- nav logo -->
       <div class="flex items-center py-3">
           <a href="/" class="flex items-center">
-              <span class="sr-only">Orchestral Soundtracks @ San Diego</span>
+              <span class="sr-only">{{ .Site.Title }}</span>
               {{ $navImage := resources.Get "img/logo_square_simple_white.png" }}
               <img src="{{ $navImage.RelPermalink }}" width="45" height="45" class="logo max-h-7 max-w-7 object-scale-down object-center nozoom" />
           </a>
