@@ -49,14 +49,14 @@
                                 alt="{{ $.Site.Params.Author.name | default " Author" }}" src="{{ $authorImage.RelPermalink }}" />
                         {{ end }}
                     {{ end }}
-                    {{/*  <h1 class="mb-2 text-4xl font-extrabold text-neutral-800 dark:text-neutral-200">
-                        {{ .Site.Params.Author.name | default .Site.Title }}
+                    <!-- {{/*  <h1 class="mb-2 text-4xl font-extrabold text-neutral-800 dark:text-neutral-200">
+                        {{ .Site.Params.Author.name | default .Site.Title }}∂ç
                     </h1>  */}}
                     {{ with .Site.Params.Author.headline }}
                     <h2 class="mt-0 mb-0 text-xl text-neutral-800 dark:text-neutral-300">
                         {{ . | markdownify }}
                     </h2>
-                    {{ end }}
+                    {{ end }} -->
                     <div class="mt-3 mb-10 text-2xl">
                         {{ with .Site.Params.Author.links }}
                         <div class="flex flex-wrap">
@@ -70,16 +70,135 @@
                         </div>
                         {{ end }}
                     </div>
-                    <section class="prose dark:prose-invert">{{ .Content }}</section>
+                    {{/*  <section class="prose dark:prose-invert">{{ .Content }}</section>  */}}
                 </div>
             </div>
         </div>
     </div>
 </article>
+
+<!-- text descriptions -->
+<article class="max-w-full prose dark:prose-invert" style="margin-top: 150px">
+    {{ with .Title }}
+      <header>
+        <h1>{{ . | emojify }}</h1>
+      </header>
+    {{ end }}
+    <section>{{ .Content }}</section>
+</article>
+
+<!-- cta content card? -->
+<!-- <article class="max-w-full prose dark:prose-invert">
+    <div class="relative">
+        <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
+        <div class="mx-auto max-w-7xl p-0">
+            <div class="relative shadow-xl sm:overflow-hidden rounded-2xl">
+                <div class="absolute inset-0">
+                    {{ $homepageImage := "" }}
+                    {{ with .Site.Params.defaultBackgroundImage }}
+                        {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
+                            {{ $homepageImage = resources.GetRemote . }}
+                        {{ else }}
+                            {{ $homepageImage = resources.Get . }}
+                        {{ end }}
+                    {{ end }}
+                    {{ with .Site.Params.homepage.homepageImage }}
+                        {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
+                            {{ $homepageImage = resources.GetRemote . }}
+                        {{ else }}
+                            {{ $homepageImage = resources.Get . }}
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div> -->
+</article>
+
+<!-- cta content -->
+<!-- <section class="cta-email-section"> -->
+    <!-- <img class="h-full w-full object-cover m-0 nozoom" src="img/back_contact.jpg"> -->
+    <!-- <div
+        class="absolute inset-0 bg-gradient-to-r from-primary-500 to-secondary-600 dark:from-primary-600 dark:to-secondary-800 mix-blend-multiply backdrop-blur-sm">
+    </div> -->
+    <!-- sm:px-6 sm:py-12 lg:py-20 lg:px-8 -->
+    <!-- <div class="relative px-6 py-10  flex flex-col items-center justify-center text-center cta-card rounded-2xl">
+        {{ with .Site.GetPage "contact-home.md" }}
+        <div class="text-4xl font-extrabold text-neutral-200">
+            {{.Title}}
+        </div>
+        {{ end }}
+        
+        {{/*  {{ with .Site.Params.Author.headline }}
+        <h2 class="mt-0 mb-0 text-xl text-neutral-300">
+            {{ . | markdownify }}
+        </h2>
+        {{ end }}  */}}
+        <div class="mt-3 mb-10 text-2xl">
+            {{/*  {{ with .Site.Params.Author.links }}
+            <div class="flex flex-wrap">
+                {{ range $links := . }}
+                {{ range $name, $url := $links }}
+                <a class="px-1 hover:text-primary-400 text-primary-300" href="{{ $url }}" target="_blank"
+                    aria-label="{{ $name | title }}" rel="me noopener noreferrer">{{ partial
+                    "icon.html" $name }}</a>
+                {{ end }}
+                {{ end }}
+            </div>
+            {{ end }}  */}}
+        </div>
+        {{/*  <section class="prose prose-invert">{{ .Content }}</section>  */}}
+        <section class="prose prose-invert">
+            {{ with .Site.GetPage "contact-home.md" }}
+                    <div>{{ .Content }}</div>
+            {{ end }}
+            <div class="mt-10 flex justify-center">
+                <a href="mailto:jitarthsheth@gmail.com">
+                <button
+                    class="bg-transparent hover:text-primary-500 prose dark:prose-invert font-semibold hover:text-white py-2 px-4 border border-primary-500 hover:border-transparent rounded">
+                    Email Us
+                </button>
+                </a>
+            </div>
+        </section>
+    </div>
+</section> -->
+
+<!-- cta -->
+<!-- todo: make it use the content -->
+<article class="max-w-full prose dark:prose-invert cta-email-section">
+    <!-- py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8 -->
+    <div class="relative flex flex-col items-center justify-center text-center cta-card rounded-2xl">
+        <div class="font-extrabold text-neutral-200 cta-card-title">
+            Want us to perform at your event?</div>
+        <div class="mt-8 cta-card-content">
+            We’re looking to engage with convention organizers as well as Anime and game studios. If you share our love for games and Anime, we’d love to talk to you and learn more.</div>
+        <div class="mt-10 flex justify-center">
+            <a href="mailto:orchestralsoundtracks@gmail.com">
+            <button
+                class="bg-transparent hover:text-primary-500 prose dark:prose-invert font-semibold hover:text-white py-2 px-4 border border-primary-500 hover:border-transparent rounded">
+                Email Us
+            </button>
+            </a>
+        </div>
+    </div>
+</article>
+
+<!-- todo: add support / contact sections -->
+<!-- WIP
+<section>Support</section>
+
+<section>Contact</section> -->
+
+
+<!-- News -->
 <section>
-    {{ partial "recent-articles/main.html" . }}
+    {{ partial "recent-articles/custom.html" . }}
 </section>
-{{ if .Site.Params.homepage.layoutBackgroundBlur | default false }}
+{{/*  {{ if .Site.Params.homepage.layoutBackgroundBlur | default false }}  */}}
+
+
+
 <div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
 <script>
     window.addEventListener('scroll', function (e) {
@@ -88,4 +207,79 @@
         background_blur.style.opacity = (scroll / 300)
     });
 </script>
-{{ end }}
+{{/*  {{ end }}  */}}
+
+
+
+<!-- manual css, move later -->
+<style>
+
+.section-title {
+    color: #151445
+}
+
+.no-mp {
+    margin: 0px;
+    padding: 0px;
+}
+
+.cta-email-section {
+    margin: 90px 0px;
+}
+
+.cta-card {
+    /* for reference */
+    /* background-color: #50C3C6; */
+    /* background-color: #151445; */
+    /* background-color: #9593C8; */
+    /* rgb(149,147,200); */
+    /* rgb(20,20,70) */
+    /* rgb(80,194,197) */
+
+    /* background-image: linear-gradient(to right, #151445 , #9593C8); */
+    /* background-image: linear-gradient(to right, rgb(80,194,197, 0.2), rgb(20,20,70, 0.5)); */
+    background-image: linear-gradient(to right, rgb(149,147,200, 0.5), rgb(20,20,70, 0.4));
+    /* background-image: linear-gradient(to right, rgb(20,20,70, 0.6), rgb(20,20,70, 0.2)); */
+
+
+
+    /* position: relative; */
+    /* background-image: url('assets/img/back_contact.jpg'); */
+    /*background-size: cover;
+    background-position: center; */
+    /* color: white; */
+    z-index: 1;
+    padding: 50px 50px;
+    margin: 0px 8%;
+}
+
+.cta-card-title {
+    font-size: 30px;
+}
+.cta-card-content {
+    max-width: 550px;
+
+}
+
+/* .cta-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+} */
+
+
+
+.testred {
+    background-color: red;
+}
+.testblue {
+    background-color: blue;
+}
+.testgreen {
+    background-color: green;
+}
+</style>
