@@ -1,5 +1,5 @@
 autoSwitchAppearance = false 
-colorScheme = "test2" 
+colorScheme = "ostColorScheme" 
 defaultAppearance = "dark" # valid options: light or dark
 disableImageOptimization = true 
 disableTextInHeader = true 
@@ -28,6 +28,6 @@ layout = "custom" # valid options: page, profile, hero, card, background, custom
 layoutBackgroundBlur = false 
 showMoreLink = false 
 # showMoreLinkDest = "/blowfish_artist/posts" 
+backContactImage = "img/back_contact.jpg"
 showRecent = true
 showRecentItems = 3
-backContactImage = "img/back_contact.jpg"
