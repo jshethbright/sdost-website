@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Orchestral Soundtracks @ San Diego</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Orchestral Soundtracks @ San Diego</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Orchestral Soundtracks @ San Diego</copyright>
+    <lastBuildDate>Sun, 15 Sep 2024 20:55:37 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Super cool article that I wrote</title>
+      <link>http://localhost:1313/posts/post-one/</link>
+      <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/post-one/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/post-one/cover.png" />
+    </item>
+    
+    <item>
+      <title>Want us to perform at your event?</title>
+      <link>http://localhost:1313/contact/contact-home/</link>
+      <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/contact/contact-home/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;re looking to engage with convention organizers as well as Anime and game studios. If you share our love for games and Anime, we&amp;rsquo;d love to talk to you and learn more.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
