@@ -12,7 +12,8 @@
       <div class="flex items-center py-3">
           <a href="/" class="flex items-center">
               <span class="sr-only">Orchestral Soundtracks @ San Diego</span>
-              <img src="/img/logo_square_simple_white.png" width="45" height="45" class="logo max-h-7 max-w-7 object-scale-down object-center nozoom" />
+              {{ $navImage := resources.Get "img/logo_square_simple_white.png" }}
+              <img src="{{ $navImage.RelPermalink }}" width="45" height="45" class="logo max-h-7 max-w-7 object-scale-down object-center nozoom" />
           </a>
       </div>
       
