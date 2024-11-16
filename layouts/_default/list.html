@@ -39,7 +39,7 @@
       mt-12
     {{- else -}}
       mt-0
-    {{- end }} prose flex max-w-full flex-col dark:prose-invert lg:flex-row">
+    {{- end }} prose flex max-w-full flex-col dark:prose-invert">
     {{ if $toc }}
     <div class="order-first px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
       <div class="toc ltr:pl-5 rtl:pr-5 lg:sticky {{ if hasPrefix .Site.Params.header.layout "fixed" -}}
@@ -51,12 +51,13 @@
     <div class="min-w-0 min-h-0 max-w-prose">
       {{ .Content }}
     </div>
-    <a href="mailto:jitarthsheth@gmail.com">
+    <a href="mailto:orchestralsoundtracks@gmail.com">
         <button
+          style="margin-top:20px"
           class="bg-transparent hover:text-primary-500 prose dark:prose-invert font-semibold hover:text-white py-2 px-4 border border-primary-500 hover:border-transparent rounded">
           Email Us
         </button>
-      </a>
+    </a>
 
 
 
