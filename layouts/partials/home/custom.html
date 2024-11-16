@@ -87,83 +87,6 @@
     <section>{{ .Content }}</section>
 </article>
 
-<!-- cta content card? -->
-<!-- <article class="max-w-full prose dark:prose-invert">
-    <div class="relative">
-        <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
-        <div class="mx-auto max-w-7xl p-0">
-            <div class="relative shadow-xl sm:overflow-hidden rounded-2xl">
-                <div class="absolute inset-0">
-                    {{ $homepageImage := "" }}
-                    {{ with .Site.Params.defaultBackgroundImage }}
-                        {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
-                            {{ $homepageImage = resources.GetRemote . }}
-                        {{ else }}
-                            {{ $homepageImage = resources.Get . }}
-                        {{ end }}
-                    {{ end }}
-                    {{ with .Site.Params.homepage.homepageImage }}
-                        {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
-                            {{ $homepageImage = resources.GetRemote . }}
-                        {{ else }}
-                            {{ $homepageImage = resources.Get . }}
-                        {{ end }}
-                    {{ end }}
-                </div>
-            </div>
-        </div>
-    </div> -->
-</article>
-
-<!-- cta content -->
-<!-- <section class="cta-email-section"> -->
-    <!-- <img class="h-full w-full object-cover m-0 nozoom" src="img/back_contact.jpg"> -->
-    <!-- <div
-        class="absolute inset-0 bg-gradient-to-r from-primary-500 to-secondary-600 dark:from-primary-600 dark:to-secondary-800 mix-blend-multiply backdrop-blur-sm">
-    </div> -->
-    <!-- sm:px-6 sm:py-12 lg:py-20 lg:px-8 -->
-    <!-- <div class="relative px-6 py-10  flex flex-col items-center justify-center text-center cta-card rounded-2xl">
-        {{ with .Site.GetPage "contact-home.md" }}
-        <div class="text-4xl font-extrabold text-neutral-200">
-            {{.Title}}
-        </div>
-        {{ end }}
-        
-        {{/*  {{ with .Site.Params.Author.headline }}
-        <h2 class="mt-0 mb-0 text-xl text-neutral-300">
-            {{ . | markdownify }}
-        </h2>
-        {{ end }}  */}}
-        <div class="mt-3 mb-10 text-2xl">
-            {{/*  {{ with .Site.Params.Author.links }}
-            <div class="flex flex-wrap">
-                {{ range $links := . }}
-                {{ range $name, $url := $links }}
-                <a class="px-1 hover:text-primary-400 text-primary-300" href="{{ $url }}" target="_blank"
-                    aria-label="{{ $name | title }}" rel="me noopener noreferrer">{{ partial
-                    "icon.html" $name }}</a>
-                {{ end }}
-                {{ end }}
-            </div>
-            {{ end }}  */}}
-        </div>
-        {{/*  <section class="prose prose-invert">{{ .Content }}</section>  */}}
-        <section class="prose prose-invert">
-            {{ with .Site.GetPage "contact-home.md" }}
-                    <div>{{ .Content }}</div>
-            {{ end }}
-            <div class="mt-10 flex justify-center">
-                <a href="mailto:jitarthsheth@gmail.com">
-                <button
-                    class="bg-transparent hover:text-primary-500 prose dark:prose-invert font-semibold hover:text-white py-2 px-4 border border-primary-500 hover:border-transparent rounded">
-                    Email Us
-                </button>
-                </a>
-            </div>
-        </section>
-    </div>
-</section> -->
-
 <!-- cta -->
 <!-- todo: make it use the content -->
 <article class="max-w-full prose dark:prose-invert cta-email-section">
@@ -184,12 +107,33 @@
     </div>
 </article>
 
-<!-- todo: add support / contact sections -->
-<!-- WIP
-<section>Support</section>
 
-<section>Contact</section> -->
+<!-- support -->
+<article class="max-w-full prose dark:prose-invert" id="support-section">
+    <header>
+      <h1>Support Us</h1>
+    </header>
+    <div class="flex flex-row">
+        <!-- <p>add a qr code here or something for pc</p> -->
+        <p>
+        If you enjoy our music, please consider supporting our orchestra! Every contribution goes directly to funding practice and performance spaces for our musicians. Please venmo us at @[TODO] or contact us if you have a different preferred method. Thank you for your generosity and support!
+        </p>
+    </div>
+</article>
 
+<!-- <section id="follow-section">
+    <div class="">Follow Us</div>
+</section> -->
+
+
+<!-- <article class="max-w-full prose dark:prose-invert" id="follow-section">
+    <header>
+      <h1>Support Us</h1>
+    </header>
+  <p>
+        Follow us on social media to keep up with our upcoming performances and recordings!    
+</p>
+</article> -->
 
 <!-- News -->
 <section>
@@ -272,6 +216,17 @@
 } */
 
 
+#support-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#follow-section {
+    background-color: white;
+    color: rgb(149,147,200);
+    margin-top: 100px;
+    padding: 5%;
+}
 
 .testred {
     background-color: red;

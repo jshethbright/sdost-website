@@ -6,6 +6,10 @@ showHeadingAnchors: false
 
 Formed in September 2023, Orchestral Soundtracks (OST) is a San Diego community orchestra for members to arrange and perform music from their favorite soundtracks. A group of musicians who came together through their college orchestra decided they wanted to continue playing, arranging, and conducting, so they formed OST to provide that opportunity to everyone. OST aims to bring to life the artistic expression and emotional depth of both soundtrack music and musicians through live performance.
 
+
+<!-- ## Support Us
+If you enjoy our music, please consider supporting our orchestra! Every contribution helps fund practice and performance spaces. Please venmo [@OrchestraVenmoHandle] or contact us if you have a preferred method. Thank you for your generosity and support! -->
+
 <!-- Founded in September 2023, Orchestral Soundtracks (OST) is a San Diego-based community orchestra dedicated to arranging and performing music from beloved soundtracks. Born from a group of musicians who met in their college orchestra and shared a passion for continuing their musical journey, OST was created to offer a space where musicians of all backgrounds can come together to explore, arrange, and perform iconic soundtrack music. The orchestra seeks to bring the emotional depth and artistic richness of film and video game scores to life, creating powerful live performances that resonate with both musicians and audiences alike. -->
 
 <!-- ## Graiorum fortius leonis
