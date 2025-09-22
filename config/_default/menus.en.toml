@@ -18,3 +18,9 @@ identifier = "instagram"
 pre = "instagram"
 url = "https://instagram.com/ost.sd"
 weight = 4
+
+[[main]]
+identifier = "youtube"
+pre = "youtube"
+url = "https://www.youtube.com/channel/UCZLYUxWMkFkF1rVwBdebUrg"
+weight = 3
