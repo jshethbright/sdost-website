@@ -23,7 +23,7 @@ showThemeAttribution = false
 [homepage]
 cardView = true 
 cardViewScreenWidth = false 
-homepageImage = "img/background.webm" # used in: hero, and card
+homepageImage = "img/org_photo.JPG" # used in: hero, and card
 layout = "custom" # valid options: page, profile, hero, card, background, custom
 layoutBackgroundBlur = false 
 showMoreLink = false 

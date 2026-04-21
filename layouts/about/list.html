@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div style="max-width:48rem; margin:0 auto; padding:2.5rem 1.5rem;">
+
+  <h1 style="font-size:2.25rem; font-weight:700; margin-bottom:2rem;">About OST</h1>
+
+  {{ $img := resources.Get "img/group_photo.jpg" }}
+  {{ if $img }}
+  <div style="margin-bottom:3rem;">
+    <img src="{{ $img.RelPermalink }}" alt="OST group photo" style="width:100%; border-radius:0.75rem; box-shadow:0 10px 25px rgba(0,0,0,0.3);" />
+  </div>
+  {{ end }}
+
+  {{ with .Params.boardMembers }}
+  <div>
+    <h2 style="font-size:1.5rem; font-weight:700; padding-bottom:0.75rem; margin-bottom:1.5rem; border-bottom:1px solid rgba(var(--color-neutral-700),1);">Meet Our Board</h2>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; margin-top:1rem;">
+      {{ range . }}
+      <div style="text-align:center; padding:1rem;">
+        <h3 style="font-size:1.1rem; font-weight:700; margin-bottom:0.5rem;">{{ .name }}</h3>
+        <p style="font-size:0.9rem; line-height:1.6; opacity:0.75;">{{ .bio }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
+</div>
+{{ end }}

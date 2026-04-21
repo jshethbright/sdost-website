@@ -38,6 +38,11 @@ button {
   animation: switchText 9s infinite;
 }
 
+/* About page board member cards */
+.board-divider {
+  border-bottom: 1px solid rgb(var(--color-neutral-700));
+}
+
 @keyframes switchText {
   0% {
     content: "con";
