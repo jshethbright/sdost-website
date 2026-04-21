@@ -21,10 +21,10 @@
                         {{ end }}
                     {{ end }}
                     {{ if $homepageImage }}
-                    {{/*  <img class="w-full h-[1000px] object-cover m-0 nozoom" src="{{ $homepageImage.RelPermalink }}" role="presentation">  */}}
-                    <video class="w-full h-[1000px] object-cover m-0 nozoom" role="presentation" autoplay loop muted>
+                    <img class="w-full h-[1000px] object-cover m-0 nozoom" src="{{ $homepageImage.RelPermalink }}" role="presentation">
+                    {{/*  <video class="w-full h-[1000px] object-cover m-0 nozoom" role="presentation" autoplay loop muted>
                         <source src="{{ $homepageImage.RelPermalink }}" type="video/webm" />
-                    </video>
+                    </video>  */}}
                     <div
                         class="absolute inset-0 h-[1000px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
                     </div>
@@ -117,7 +117,7 @@
     <div class="flex">
         <!-- <p>add a qr code here or something for pc</p> -->
         <p>
-        If you enjoy our music, please consider supporting our orchestra! Every contribution goes directly to funding practice and performance spaces for our musicians. Please donate to us on our <a href="https://ko-fi.com/orchestralsoundtracks"> {{ partial "inline-icon.html" "ko-fi" }} Ko-Fi page</a>
+        If you enjoy our music, please consider supporting our orchestra! Every contribution goes directly to funding practice and performance spaces for our musicians. Please donate to us on our <a href="https://givebutter.com/DonateOST"> {{ partial "inline-icon.html" "givebutter" }} GiveButter page</a>
         or contact us if you have a different preferred method. Thank you for your generosity and support!
         </p>
     </div>

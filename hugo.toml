@@ -1,3 +1,4 @@
 baseURL = 'https://sdost.org/'
 languageCode = 'en-us'
 title = 'Orchestral Soundtracks @ San Diego'
+ignoreLogs = ['warning-partial-superfluous-prefix', 'warning-module-version-mismatch']
