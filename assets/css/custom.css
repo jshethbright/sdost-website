@@ -57,3 +57,65 @@ button {
     content: "con";
   }
 }
+
+/* Concert Banner */
+.concert-banner {
+  position: relative;
+  z-index: 50;
+  background: rgba(10, 8, 20, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(252, 209, 69, 0.25);
+  padding: 0.7rem 1rem;
+  text-align: center;
+}
+
+.concert-banner-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 1.1rem;
+  font-family: Exo2-Light, sans-serif;
+}
+
+.concert-banner-label {
+  color: rgb(252, 209, 69);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.concert-banner-divider {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 1rem;
+}
+
+.concert-banner-details {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+}
+
+.concert-banner-cta {
+  display: inline-block;
+  color: #0a0814;
+  background: rgb(252, 209, 69);
+  padding: 0.28rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+  box-shadow: 0 0 14px rgba(252, 209, 69, 0.35);
+}
+
+.concert-banner-cta:hover {
+  background: rgb(253, 228, 144);
+  transform: translateY(-1px);
+  box-shadow: 0 0 20px rgba(252, 209, 69, 0.5);
+  text-decoration: none;
+}
